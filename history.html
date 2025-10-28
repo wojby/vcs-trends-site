@@ -62,8 +62,49 @@ contributors to automated infrastructure management via GitOps.</li></p>
 
 </ul>
 
-<a href="trends.html">Modern Trends in Version Control</a><br>
-<a href="index.html">Go back to main page</a>
+<hr>
+
+<h2 align = "center">Comparing Major VCS Tools and Their Use Cases
+Over time, various VCS tools have been created, each suited to certain use cases and project sizes.
+Here’s a comparison of some historically significant systems: </h2>
+
+<ul>
+
+    <p><li><b>RCS (Revision Control System)</b>: Local system for single files. Simple, now obsolete.</li></p>
+
+    <p><li><b>CVS (Concurrent Versions System)</b>: Centralized client-server for small-to-medium teams.
+           Lacked robust features like atomic commits and strong merging, which lead to difficulties in larger projects. Not used often today.</li></p>
+
+    <p><li><b>Subversion (SVN)</b>: Centralized system that improved upon CVS with atomic commits and better branching/merging.
+           Very popular in mid-2000s and still in use for some legacy projects, though branching can be clumsy on very large teams.</li></p>
+
+    <p><li><b>Git</b>: The distributed system that is now the standard.
+           Highly flexible and extremely fast at branching and merging, making it ideal for projects of any scale, especially open-source and modern DevOps.</li></p>
+
+    <p><li><b>Mercurial</b>: Another powerful distributed system, similar to Git but known for a more straightforward command set.
+           Did not achieve Git's widespread adoption due to the network effect of platforms like GitHub.</li></p>
+
+    <p><h3 align = "center">Summarizing, while earlier centralized tools like CVS and SVN provided basic versioning and improved reliability, Git now dominates the industry due to its performance, flexibility,
+           and robust ecosystem, with the core difference being centralized vs. distributed workflows.</h3></p>
+</ul>
+
+<hr>
+
+<h1 align = "center">DVCS revolution</h1>
+
+<p><b><i>Distributed Version Control Systems (DVCS)</b></i>, like <b>Git</b>, revolutionized development by enabling:</p>
+
+<ul>
+    <p><li><b>Lightweight branching and merging</b>: Developers can easily create branches, work independently, and merge changes without much overhead, encouraging flexible, non-linear workflows.</li></p>
+    <p><li><b>Offline work</b>: Developers can commit, branch, and merge locally, only needing to sync with others when online.</li></p>
+    <p><li><b>Decentralization</b>: Every developer has a full copy of the repository, offering redundancy and resilience, removing the single point of failure seen in Centralized Version Control (CVCS).</li></p>
+    <p><li><b>Faster operations</b>: Most actions (commits, diffs, logs) are done locally, making them faster and not reliant on network connectivity.</li></p>
+    <p><li><b>Flexible collaboration</b>: Forking and peer-to-peer interactions make collaboration smoother, especially for open-source projects or decentralized teams.</li></p>
+</ul>
+<hr>
+
+<a href="trends.html" style="font-size: 30px;">Modern Trends in Version Control</a>
+<a href="index.html" style="font-size: 30px; float:right;">Go back to main page</a>
 
     </body>
 </html>

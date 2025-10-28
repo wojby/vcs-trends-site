@@ -43,17 +43,17 @@ reproducible and auditable systems.</p>
 
 <h2>Integration with CI/CD Pipelines</h2>
 
-<p>Modern software development emphasizes Continuous Integration (CI) and Continuous Delivery/
-Deployment (CD). Version control sits at the heart of CI/CD: </p>
+<p>Modern software development emphasizes <b>Continuous Integration (CI)</b> and <b>Continuous Delivery/
+Deployment (CD)</b>. Version control sits at the heart of CI/CD: </p>
 
 <ul>
-    <p><li>Continuous Integration (CI): Developers frequently merge their code changes (at least daily)
+    <p><li><b>Continuous Integration (CI)</b>: Developers frequently merge their code changes (at least daily)
 into the main branch. Each merge triggers an automated build and test process to catch
 integration issues early. By using a VCS, every change is tracked, and tools like Jenkins, CircleCI,
 or GitLab CI can hook into the repository. For example, whenever code is pushed to GitHub, a CI
 service can automatically run a suite of tests. This tight integration ensures that problems are
 detected quickly – it’s easier to pinpoint which commit caused a test to fail.</li></p>
-    <p><li>Continuous Delivery/Deployment (CD): After integration and testing, the pipeline can
+    <p><li><b>Continuous Delivery/Deployment (CD)</b>: After integration and testing, the pipeline can
 automatically deliver changes to staging or production environments. Version control ensures
 that deployments are based on known versions (for instance, deploying the exact commit that
 passed tests). Rollback is straightforward too – if a deployment fails, you can deploy a previous
@@ -67,7 +67,7 @@ application, and perhaps deploy to an environment. Teams often configure branch-
 (e.g. commits to a dev branch deploy to a dev environment, commits to main branch trigger a
 production release after approvals).</p>
 
-<p>Benefits: Integrating VCS with CI/CD leads to faster, more reliable releases. Since all changes are
+<p><b>Benefits</b>: Integrating VCS with CI/CD leads to faster, more reliable releases. Since all changes are
 tracked in Git: - It’s easy to trace which code is in a given deployment (just check the commit hash). - If a
 bug is found, developers can use Git history to find when it was introduced and who made the change. -
 Teams can use code reviews (pull requests) as gates in the pipeline – only merging code that passes
@@ -77,7 +77,7 @@ Continuous feedback: Developers get quick feedback from the CI system if somethi
 rapid fixes. This is much more efficient than integrating weeks or months of work at once (which was
 common before CI – and often led to “integration hell” with many conflicts).</p>
 
-<p>Example: Imagine a small web app team on GitHub. They use GitHub Actions (a CI service) that runs
+<p><b>Example</b>: Imagine a small web app team on GitHub. They use GitHub Actions (a CI service) that runs
 whenever code is pushed. A developer working on a new feature creates a feature branch, commits
 changes, and opens a pull request. The CI pipeline automatically compiles the app and runs tests on
 that pull request. Suppose a test fails – the CI posts a message on the pull request indicating failure,
@@ -98,27 +98,27 @@ deployable</p>
 collaboration. Services like GitHub, GitLab, and Bitbucket have become ubiquitous for both opensource and private code hosting. These platforms add a host of features on top of raw version control: </p>
 
 <ul>
-    <p><li>Easy Collaboration: They provide web interfaces where you can review code, comment on
+    <p><li><b>Easy Collaboration</b>: They provide web interfaces where you can review code, comment on
 specific lines, and discuss changes. The Pull Request (GitHub) or Merge Request (GitLab) model has
 become a standard for proposing changes – it’s essentially a space to review and approve
 commits before they integrate into main code. This has improved code quality and team
 communication.</li></p>
 
-    <p><li>Issue Tracking and Project Management: Integration of issue trackers lets teams link code
+    <p><li><b>Issue Tracking and Project Management</b>: Integration of issue trackers lets teams link code
 changes to bug reports or feature requests. For example, closing an issue automatically when a
 commit message says “fixes #123” helps tie development to planning.</li></p>
 
-    <p><li>Continuous Integration Services: GitHub and GitLab come with built-in CI runners (GitHub
+    <p><li><b>Continuous Integration Services</b>: GitHub and GitLab come with built-in CI runners (GitHub
 Actions, GitLab CI) that integrate tightly with repos. Bitbucket connects with CI tools like Bamboo
 or Bitbucket Pipelines. This makes the earlier-mentioned CI/CD setup even easier – often zeroconfig for basic pipelines.</li></p>
 
-    <p><li>Social Coding: Especially for open source, platforms like GitHub have a network effect – you can
+    <p><li><b>Social Coding</b>: Especially for open source, platforms like GitHub have a network effect – you can
 discover projects, fork them (make your own copy), contribute back via pull requests, and even
 build a developer portfolio through your contributions. This has massively increased the scale of
 collaboration in open source. (For instance, large projects on GitHub can have hundreds or
 thousands of contributors worldwide.)</li></p>
 
-    <p><li>Access Control and Integrations: Cloud VCS platforms manage user access (so you don’t have
+    <p><li><b>Access Control and Integrations</b>: Cloud VCS platforms manage user access (so you don’t have
 to set up your own Git server and user accounts). They also integrate with other services – e.g.,
 linking a repository to a deployment on Heroku, or to Slack notifications, etc., creating an entire
 ecosystem around code.</li></p>
@@ -155,19 +155,19 @@ complex aspects. AI bots can also enforce consistency by ensuring every change i
 the same criteria, reducing the chance of human oversight.</p>
 
 <ul>
-    <p><li>Intelligent Merge Conflict Resolution: Research is ongoing into AI that could help resolve
+    <p><li><b>Intelligent Merge Conflict Resolution</b>: Research is ongoing into AI that could help resolve
 merge conflicts by understanding the intent of code changes. In the future, an AI might be able
 to suggest how to merge two divergent edits automatically by analyzing context (though this is a
 hard problem and not mainstream yet).</li></p>
 
-    <p><li>Code Management Insights: AI can sift through the repository history and metadata. For
+    <p><li><b>Code Management Insights</b>: AI can sift through the repository history and metadata. For
 example, AI could predict which files are most likely to have bugs based on past commit data
 (using patterns in code changes). It might prioritize code review or testing on those areas. AI
 could also generate summaries of code changes – e.g., automatically writing a draft of a commit
 message or release notes by analyzing the diff (some projects already generate changelogs
 using natural language processing on commits).</li></p>
 
-    <p><li>Pair Programming Assistants: While not strictly part of version control, tools like GitHub
+    <p><li><b>Pair Programming Assistants</b>: While not strictly part of version control, tools like GitHub
 Copilot (an AI pair programmer) integrate with your editor to suggest code as you type. This
 influences version control indirectly by potentially speeding up coding and reducing certain
 types of errors (the code you commit may be partly AI-suggested). Over time, such AI assistants
@@ -186,8 +186,24 @@ platform’s interface, allowing them to make improvements before merge. This sy
 version control is still evolving, but it’s a promising area that today’s students might commonly
 encounter in their careers.</p>
 
-    <a href="history.html">Historical Evolution of Version Control Systems</a><br>
-    <a href="index.html">Go back to main page</a>
+<hr>
+
+<h1 align = "center">Summary</h1>
+
+<ul>
+    <p><li><b>GitOps (VCS for Operations)</b>: Uses Git as the Single Source of Truth for infrastructure configuration (Infrastructure as Code).
+           Changes to infrastructure are managed via standard Git workflows (Pull Requests) which trigger automated deployment</li></p>
+    <p><li><b>Integration with CI/CD</b>: VCS is the backbone for Continuous Integration/Delivery.
+           Every code commit triggers automated testing and deployment, ensuring releases are traceable (by commit hash), reliable, and easily rolled back.</li></p>
+    <p><li><b>Cloud Platforms (GitHub, GitLab, Bitbucket)</b>: These platforms host Git repos and standardize collaboration using Pull Requests/Merge Requests.
+           They integrate built-in CI services and tools for project management, fueling massive open-source and commercial collaboration.</li></p>
+    <p><li><b>AI in Code Management</b>: AI is starting to augment developer tasks, such as AI-assisted code reviews (detecting bugs/style in PRs)
+           and generating insights from code history, aiming to improve code quality and productivity.</li></p>
+</ul>
+<hr>
+
+    <a href="history.html" style="font-size: 30px;">Historical Evolution of Version Control Systems</a>
+    <a href="index.html" style="font-size: 30px; float:right;">Go back to main page</a>
 
     </body>
 </html>
